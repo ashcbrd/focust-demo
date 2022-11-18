@@ -1,0 +1,1 @@
+web: python calculator.py --port=$PORT
