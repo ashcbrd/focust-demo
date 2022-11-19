@@ -1,1 +1,1 @@
-web: python focust.py --port=$PORT
+web: python3 focust.py --port=$PORT
