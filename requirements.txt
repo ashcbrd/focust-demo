@@ -4,3 +4,4 @@ pymongo==4.3.2
 PyQRCode==1.2.1
 pywebio==1.7.0
 opencv-python-headless==4.6.0.66
+cvzone==1.5.6
