@@ -195,7 +195,7 @@ def register():
     
 
 def logout():
-    toast("you have logged out")
+    toast("Currently not working", color="danger")
 
 def header():
     content = open('public/mainlogo.png', 'rb').read()
