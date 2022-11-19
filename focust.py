@@ -14,7 +14,6 @@ from pywebio import *
 import time
 from datetime import date, timedelta
 import random
-import re
 from flask import Flask
 import argparse
 
@@ -206,7 +205,7 @@ def header():
 def detect():
     current_time = datetime.datetime.now()
     current_time_str = current_time.strftime('%H:%M')
-    duration = datetime.timedelta(minutes=1)
+    duration = datetime.timedelta(seconds=5)
     endTime = datetime.datetime.now() + duration
     endTime_toStr = endTime.strftime('%H:%M')
   
@@ -301,7 +300,7 @@ def detect():
         #focus score ni
         if datetime.datetime.now() >= endTime:
           
-          playsound('alarm.wav')
+          playsound('./public/alarm.wav')
           blinkRate = blinkCounter/ divisor
           Fscore_i = blinkRate + drowsiness + distraction
           FsFinal = (float(Fscore_i/3)) * 100
