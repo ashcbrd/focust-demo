@@ -204,7 +204,7 @@ def header():
 def detect():
     current_time = datetime.datetime.now()
     current_time_str = current_time.strftime('%H:%M')
-    duration = datetime.timedelta(seconds=5)
+    duration = datetime.timedelta(minutes=1)
     endTime = datetime.datetime.now() + duration
     endTime_toStr = endTime.strftime('%H:%M')
   
@@ -555,7 +555,7 @@ def manual():
     put_button('Back', onclick=lambda: go_app("index", new_window=False), color='danger')
     
 
-app.add_url_rule('focust', 'web_view', webio_view(index), methods=['GET', 'POST', 'OPTIONS'])
+app.add_url_rule('/focust', 'web_view', webio_view(index), methods=['GET', 'POST', 'OPTIONS'])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
