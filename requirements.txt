@@ -6,3 +6,4 @@ pymongo==4.3.2
 PyQRCode==1.2.1
 pywebio==1.7.0
 mediapipe==0.9.0
+cvzone==1.5.6
