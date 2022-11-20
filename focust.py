@@ -211,7 +211,7 @@ def detect():
     put_text('Start studying!').style('font-size:50px').style('font-weight:bold').style('text-align:center')
     put_text('Session started: ', current_time_str).style('font-size:30px').style('font-weight:bold').style('text-align:center')
     put_text('Your session will end in: ', endTime_toStr).style('font-size:30px').style('font-weight:bold').style('text-align:center')
-    cap = cv.VideoCapture(0)
+    cap = cv.VideoCapture(1)
     detector = FaceMeshDetector(maxFaces=1)
 
     faceIdList = [10, 338, 297, 332, 284, 251, 389, 356, 454, 323, 361, 288, 397, 365, 379, 378, 400,
